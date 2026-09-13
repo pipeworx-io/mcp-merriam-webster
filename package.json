@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-merriam-webster",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Merriam-Webster MCP — wraps the Merriam-Webster Collegiate Dictionary and",
   "type": "module",
   "main": "src/index.ts",
