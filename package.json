@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-merriam-webster",
-  "version": "0.1.3",
-  "description": "Merriam-Webster MCP — wraps the Merriam-Webster Collegiate Dictionary and",
+  "version": "0.1.4",
+  "description": "Merriam-Webster MCP — wraps the Merriam-Webster Collegiate Dictionary and Collegiate Thesaurus APIs (dictionaryapi.com).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-6b8bcb92884e33c900f27d1233d7909969343cab647c5da6fd6b022d9b732f70",
-    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
+    "sourceHash": "v1-569b7de6d2f21feb053c8d5092ef690b546050d793c66c563381d9e317bee9ed",
+    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
   }
 }
