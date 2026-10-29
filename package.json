@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-merriam-webster",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Merriam-Webster MCP — wraps the Merriam-Webster Collegiate Dictionary and Collegiate Thesaurus APIs (dictionaryapi.com).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-merriam-webster": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "merriam-webster"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-merriam-webster.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/merriam-webster",
   "pipeworx": {
-    "sourceHash": "v1-569b7de6d2f21feb053c8d5092ef690b546050d793c66c563381d9e317bee9ed",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "merriam-webster",
+    "gatewaySlug": "merriam_webster",
+    "sourceHash": "v1-552f4116b3d56d5279167b8040b8c86f7fd0ba387f151652bab92bfbf99157fe",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

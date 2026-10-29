@@ -1,0 +1,42 @@
+[
+  {
+    "name": "define",
+    "description": "Look up a word in the Merriam-Webster dictionary — the authoritative American English dictionary. Returns word definitions (short definitions), part of speech (noun, verb, adjective, etc.), pronunciation, and etymology (word origin). When the word is not found, returns close spelling suggestions instead. Example: define({ word: \"ephemeral\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "word": {
+          "type": "string",
+          "description": "The word to look up, e.g. \"ephemeral\", \"serendipity\", \"run\""
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Merriam-Webster keys as DICT_KEY:THES_KEY for higher limits; omit to use the shared Pipeworx key."
+        }
+      },
+      "required": [
+        "word"
+      ]
+    }
+  },
+  {
+    "name": "thesaurus",
+    "description": "Look up a word in the Merriam-Webster thesaurus — the authoritative American English thesaurus. Returns synonyms and antonyms grouped by sense, along with part of speech (noun, verb, adjective, etc.) and short definitions. When the word is not found, returns close spelling suggestions instead. Example: thesaurus({ word: \"happy\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "word": {
+          "type": "string",
+          "description": "The word to look up, e.g. \"happy\", \"fast\", \"destroy\""
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Merriam-Webster keys as DICT_KEY:THES_KEY for higher limits; omit to use the shared Pipeworx key."
+        }
+      },
+      "required": [
+        "word"
+      ]
+    }
+  }
+]
